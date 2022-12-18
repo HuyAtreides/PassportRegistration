@@ -1,0 +1,24 @@
+<nav class="nav flex-column nav-pills col-2 p-2">
+  {{#register}}
+    <a class="nav-link active" aria-current="page" href="/process/register">Đăng ký</a>
+  {{/register}}
+  {{^register}}
+    <a class="nav-link" aria-current="page" href="/process/register">Đăng ký</a>
+  {{/register}}
+
+  {{#auth}}
+    <a class="nav-link active" href="/process/auth">Xác thực</a>
+  {{/auth}}
+  {{^auth}}
+    <a class="nav-link" href="/process/auth">Xác thực</a>
+  {{/auth}}
+
+  {{#author}}
+    <a class="nav-link active" href="/process/author">Xét duyệt</a>
+  {{/author}}
+  {{^author}}
+    <a class="nav-link" href="/process/author">Xét duyệt</a>
+  {{/author}}
+  <a class="nav-link" href="#">Lưu Trữ</a>
+  <a class="nav-link">Kiểm tra</a>
+</nav>

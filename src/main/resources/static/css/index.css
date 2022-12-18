@@ -1,0 +1,22 @@
+*, html {
+  box-sizing: border-box;
+}
+
+.app-container {
+  padding: 0;
+}
+.main-content {
+
+  width: 100%;
+}
+
+.logout-btn {
+  color: var(--bs-warning) !important;
+  text-decoration: none;
+}
+
+.error-message {
+  color: #DC3545;
+  text-align: center;
+}
+
