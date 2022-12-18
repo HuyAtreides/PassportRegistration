@@ -1,10 +1,26 @@
 <div class="row col-10 mt-2 justify-content-center">
   <ul class="nav nav-tabs">
     <li class="nav-item">
-      <a class="nav-link active" aria-current="page" href="#">Active</a>
+      {{#residentSection}}
+        <a class="nav-link active" aria-current="page" href="/process/auth/resident?id={{rid}}">Thông tin cá nhân</a>
+      {{/residentSection}}
+      {{^residentSection}}
+        <a class="nav-link" aria-current="page" href="/process/auth/resident?id={{rid}}">Thông tin cá nhân</a>
+      {{/residentSection}}
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">Link</a>
+      {{#passportSection}}
+        <a class="nav-link active" href="/process/auth/details?id={{rid}}">Thông tin hộ chiếu</a>
+      {{/passportSection}}
+      {{^passportSection}}
+        <a class="nav-link" href="/process/auth/details?id={{rid}}">Thông tin hộ chiếu</a>
+      {{/passportSection}}
     </li>
   </ul>
+  {{#passport}}
+    {{>passport-info/passport-info}}
+  {{/passport}}
+  {{#resident}}
+    {{>resident-info/resident-info}}
+  {{/resident}}
 </div>

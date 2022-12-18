@@ -30,7 +30,12 @@
           {{>register/register}}
         {{/register}}
         {{#auth}}
-          {{>authenticate-passport/authenticate}}
+          {{#authDetails}}
+            {{>authenticate-details/auth-details}}
+          {{/authDetails}}
+          {{^authDetails}}
+            {{>authenticate-passport/authenticate}}
+          {{/authDetails}}
         {{/auth}}
         {{#author}}
           {{>authorize-passport/authorize}}

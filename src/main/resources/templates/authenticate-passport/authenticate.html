@@ -4,6 +4,7 @@
     <thead>
     <tr>
       <th scope="col"></th>
+      <th scope="col"></th>
       <th scope="col">CMND</th>
       <th scope="col">Giới Tính</th>
       <th scope="col">Địa Chỉ</th>
@@ -14,33 +15,19 @@
     </tr>
     </thead>
     <tbody>
-    <tr>
-      <th scope="row"><button class="btn btn-primary">Xác thực</button></th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo </td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <th scope="row"><button class="btn btn-primary">Xác thực</button></th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <th scope="row"><button class="btn btn-primary">Xác thực</button></th>
-      <td >Larry the Bird</td>
-      <td></td>
-      <td>@twitter</td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
+    {{#passportData}}
+      <tr>
+        <td><a role="button" class="btn btn-primary" href="/process/performAuth?id={{id}}">Xác thực</a></td>
+        <td><a role="button" class="btn btn-link" href="/process/auth/resident?id={{id}}">Thông tin cá nhân</a></td>
+        <td>{{id}}</td>
+        <td>{{gender}}</td>
+        <td>{{address}}</td>
+        <td>{{phone}}</td>
+        <td>{{email}}</td>
+        <td>{{name}}</td>
+        <td>{{status}}</td>
+      </tr>
+    {{/passportData}}
     </tbody>
   </table>
 </div>

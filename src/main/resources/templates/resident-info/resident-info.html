@@ -1,0 +1,52 @@
+<div class="row col-10 mt-2 justify-content-center">
+  <form action="/auth/register" method="post" class="col-8 justify-content-center">
+    <div class="mb-3 row">
+      <label for="name" class="form-label">Họ Tên</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" value="{{resident.name}}" readonly id="name" disabled>
+      </div>
+    </div>
+    <div class="mb-3 row">
+      <label for="email" class="form-label">Email</label>
+      <div class="col-sm-10">
+        <input type="email" class="form-control" id="email" readonly value="{{resident.email}}" disabled>
+      </div>
+    </div>
+    <div class="mb-3 row">
+      <label for="address" class="form-label">Địa chỉ thường trú</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" value="{{resident.address}}" id="address" readonly disabled>
+      </div>
+    </div>
+    <div class="mb-3 row">
+      <label for="gender" class="form-label">Phái</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="gender" value="{{resident.gender}}" readonly disabled>
+      </div>
+    </div>
+    <div class="mb-3 row">
+      <label for="id" class="form-label">Chứng minh nhân nhân</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="id" value="{{resident.id}}" readonly disabled>
+      </div>
+    </div>
+    <div class="mb-3 row">
+      <label for="phone" class="form-label">Số điện thoại</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="phone" value="{{resident.phone}}" readonly disabled>
+      </div>
+    </div>
+    <div class="mb-3 row">
+      <label for="nation" class="form-label">Quốc tịch</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="nation" value="{{resident.nation}}" readonly disabled>
+      </div>
+    </div>
+    <div class="mb-3 row">
+      <label for="date-of-birth" class="form-label">Ngày sinh</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="date-of-birth" value="{{resident.dateOfBirth}}" readonly disabled>
+      </div>
+    </div>
+  </form>
+</div>
