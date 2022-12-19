@@ -1,0 +1,21 @@
+<div class="row col-10 mt-2 justify-content-center table-responsive">
+  <h3 class="mt-3">Hộ chiếu đã được xét duyệt</h3>
+  <table class="table">
+    <thead>
+    <tr>
+      <th scope="col">CMND</th>
+      <th scope="col">Họ Tên</th>
+      <th scope="col">Tình Trạng</th>
+    </tr>
+    </thead>
+    <tbody>
+    {{#storage}}
+    <tr>
+      <td>{{id}}</td>
+      <td>{{name}}</td>
+      <td>{{status}}</td>
+    </tr>
+    {{/storage}}
+    </tbody>
+  </table>
+</div>

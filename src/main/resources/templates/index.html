@@ -37,9 +37,12 @@
             {{>authenticate-passport/authenticate}}
           {{/authDetails}}
         {{/auth}}
-        {{#author}}
+        {{#isAuthor}}
           {{>authorize-passport/authorize}}
-        {{/author}}
+        {{/isAuthor}}
+        {{#isStorage}}
+          {{>storage/storage}}
+        {{/isStorage}}
       {{/error}}
     </main>
   {{/name}}
